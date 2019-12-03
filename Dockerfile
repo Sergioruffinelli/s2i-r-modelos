@@ -27,6 +27,7 @@ RUN yum -y install epel-release && \
 # sets io.openshift.s2i.scripts-url label that way, or update that label
 COPY ./s2i/bin/ /usr/libexec/s2i
 RUN chmod 777 /usr/libexec/s2i/*
+RUN chmod -R 777 /usr/lib64/R ./
 
 # Drop the root user and make the content of /opt/app-root owned by user 1001
 RUN chown -R 1001:1001 /opt/app-root
