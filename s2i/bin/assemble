@@ -23,7 +23,7 @@ echo "---> Installing application source..."
 cp -Rf /tmp/src/. ./
 
 # ejecuta istalacion de paquetes de R
-
+chmod -R +rw /usr/lib64/R ./
 Rscript packages.R
 
 
