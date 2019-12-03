@@ -11,4 +11,5 @@ You can then run the resulting image via:
 docker run <application image>
 
 Imagen creada para la construccion de modelos en R 
+
 EOF

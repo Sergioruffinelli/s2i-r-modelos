@@ -21,7 +21,7 @@ RUN yum -y install epel-release && \
 	
 	
 # : Copy the builder files into /opt/app-root
-COPY ./etc/ /opt/app-root/etc
+#COPY ./etc/ /opt/app-root/etc
 
 # Copy the S2I scripts to /usr/libexec/s2i, since openshift/base-centos7 image
 # sets io.openshift.s2i.scripts-url label that way, or update that label
